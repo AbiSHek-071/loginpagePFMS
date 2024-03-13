@@ -1,0 +1,109 @@
+@font-face{
+    font-family: primary;
+    src: url("./FONT/PlusJakartaSans-Bold.ttf");
+}
+@font-face {
+    font-family: regular;
+    src: url("./FONT/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+    font-family: semi;
+    src: url("./FONT/PlusJakartaSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: lights;
+    src: url("./FONT/PlusJakartaSans-Light.ttf");
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --clr--primary:#f1f5fb;
+    --clr--secondry:#dee9fb;
+    --clr--black:#252525;
+    --clr--white:#ffffff;
+}
+
+
+body{
+
+    width: 100vw;
+    height: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: linear-gradient(to bottom right, rgba(142, 152, 228, 0.24), rgba(217, 217, 217, 0.44), rgba(206, 219, 246, 0.81));
+    
+}
+.overlay{
+    width: 50%;
+    background-color: blueviolet;
+    height: 100%;
+}
+.all_container{
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.overlay{
+    width: 50%;
+    background-color: blueviolet;
+    height: 100%;
+    position: absolute;
+    transition: transform .5s ease-in-out;
+   
+}
+#login{
+    color: blue;
+    cursor: pointer;
+   
+}
+
+#signup{
+    color: blue;
+    cursor: pointer;
+   
+}
+.login{
+    transform: translateX(0);
+}
+.signup{
+    transform: translateX(100%);
+}
+.login_container{
+    width: 50%;
+    height: 100%;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup_container{
+    width: 50%;
+    height: 100%;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+    width: 40%;
+    height: 50%;
+    border-radius: 16px;
+
+}
+.signup_container{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
